@@ -1,0 +1,102 @@
+<p>This block of code and content contains pretty much, all the elements you may include in your Wordpress blog. It's by no means comprehensive, but it has the main elements. When you are working on the styling of your blog (but after you have it installed), copy all the content of this page and paste it into an empty blog post, under the HTML tab (not the Visual), and click preview. This will show you the primary elements available to you that you can style. Also, every element has been included in an accessible and up to date (HTML5) manner, especially the table and the form. Try and keep the structure of that in place. If you're not sure how to make tables accessible, check out this <a href="http://www.456bereastreet.com/archive/200410/bring_on_the_tables/">fantastic article on 456 Berea St.</a> I've also put small tips in the content as you go along, to indicate what is good practise or better for accessibility.</p>
+
+<p>Become familiar with the content, so you know what's there to style (e.g. if you use <a href="http://meyerweb.com/eric/tools/css/reset/">Eric Meyer's Reset CSS</a>, you won't see the strong or em tags in the next paragraph). This is a work in progress, so hope it helps. So let's begin!</p>
+
+<h1>Really, you shouldn't have a h1 in your body text, but here's a style for it anyway</h1>
+
+<p>A h1 should wrap the logo and be the primary header on the page. A page should only have one h1. This is both semantically better and more accessible to your users. Ideally, wrap a logo, with proper alt and title attributes in a h1 and have this at the top of the page. Now for some filler text from <a href="http://www.blindtextgenerator.com">Blind Text Generator</a>: <br />
+<strong>Far far away,</strong> behind the word mountains, far from the countries <em>Vokalia</em> and <em>Consonantia</em>, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+
+<h2>A h2 style is more appropriate as the first header in content</h2>
+<p>I personally don't like to use horizontal rules (<hr>'s), but you might feel it's something you'd like to use. You might add a "back to top" graphic to it or something. I'm not sure. Either way, there's a horizontal rule between this paragraph and the next header for you to style up should you so wish.</p>
+
+<hr />
+
+<h3>A h3 style should follow suit</h3>
+<p>More Blind Text: The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. Of course an example of an <a href="http://www.google.com" title="Link to Google">inline link</a> is always handy to have too. Set the focus outline in the stylesheet (notice I said "Set" not "Turn it on"). Also, where you provide a :hover, provide an :active and a :focus. This will keep your links accessible.</p>
+
+<h4>Really, I personally can't think of a reason...</h4>
+<p>... why you would need more than 3 header levels for your content, in the same way that you shouldn't have more than 3 typefaces on a page. How and ever, that's for you to decide. So for that reason, there's no h5 or h6 styles here. Lists, on the other hand, can be a pain. The main thing to watch out for with lists is if you float them and then, give the items widths with padding and margins, they add up and push out to the right very quickly.</p>
+
+<ul>
+	<li>There are a number of things lists are used for.</li>
+	<li>Lists...</li>
+	<li><a href="#">Link lists, often in a block style</a></li>
+	<li>Really long blocks of content to be shown in sequential order. It doesn't often work to do this and if the content is really that long and <em>still</em> needs to go into an unordered list, then really, you have too much content and no one is going to read it. It's an unfortunate fact, but it's true. Think about how much you read on websites yourself. Are you really going to go through all that content? Maybe you would; I won't.</li>
+	<li><ul>
+		<li>Then of course, there's lists in lists.</li>
+		<li>I think rules of competitions and guidelines are really the only things myself I can see lists in lists being used for.</li>
+		<li>Or addresses in lists, that might make sense</li>
+		<li>Whatever the reason, they should be catered for. Ramble, ramble, ramble.</li>
+		</ul></li>
+	<li>I'm not going to write new stuff out for the ol, I'll just repeat this content</li>
+</ul>
+
+<ol>
+	<li>There are a number of things lists are used for.</li>
+	<li>Lists...</li>
+	<li><a href="#">Link lists</a></li>
+	<li>Really long blocks of content to be shown in sequential order. It doesn't often work to do this and if the content is really that long and <em>still</em> needs to go into an unordered list, then really, you have too much content and no one is going to read it. It's an unfortunate fact, but it's true. Think about how much you read on websites yourself. Are you really going to go through all that content? Maybe you would; I won't.</li>
+	<li><ul>
+		<li>Then of course, there's lists in lists.</li>
+		<li>I think rules of competitions and guidelines are really the only things myself I can see lists in lists being used for.</li>
+		<li>Or addresses in lists, that might make sense</li>
+		<li>Whatever the reason, they should be catered for</li>
+	</ul></li>
+</ol>
+
+<p>Let's look at some lesser known, but important to have elements catered for by the Wordpress editor, primarily the blockquote and the code tags. Note that the Wordpress editor has no "cite" tag, you'll have to add this yourself and should add it to keep your blockquote both relevant and accessible.</p>
+
+<blockquote>Now is the winter of our discontent
+Made glorious summer by this sun of York;
+And all the clouds that lour'd upon our house
+In the deep bosom of the ocean buried.</blockquote>
+<cite>Richard III Act 1 Sc. 1 - <em>William Shakespeare</em></cite>
+
+<code> 
+$(function(){
+	$('#hello').append('World');
+});
+</code>
+
+<p>Finally, let's look at table layout. First off, tables are for data. Should you use tables for layout? Absolutely not. This is a bygone era, one we have long since passed. If you don't know enough about CSS to not use tables for layout, get someone who does to help you! The following table is fully accessible too. The caption tag here is shown, though normally, I would have it hidden to sighted users, unless absolutely necessary.</p>
+
+<table border="0" cellpadding="0" cellspacing="0" summary="This text should describe what the data in this table is trying to convey (e.g. This table shows the sales of apples and oranges for the month of April 2011)">
+<caption>Optional text that would indicate the table, like the figure text below an image (e.g. Table 1. - April 2011 Sales)</caption>
+	<thead>
+		<tr>
+			<th id="type-of-fruit" scope="col">Fruit</th>
+			<th id="europe-sales" scope="col">EU</th>
+			<th id="usa-sales" scope="col">USA</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th headers="type-of-fruit" id="apples" scope="row">Apples</th>
+			<td headers="europe-sales apples">130,000</td>
+			<td headers="usa-sales apples">250,000</td>
+		</tr>
+		<tr>
+			<th headers="type-of-fruit" id="oranges" scope="row">Oranges</th>
+			<td headers="europe-sales oranges">90,000</td>
+			<td headers="usa-sales oranges">350,000</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>The final, most common element we need to include in a blog post is a form (like those produced by the Contact Form 7 plugin). Most form plugins don't format the content of the form correctly (e.g. no labels). I'd recommend you fix this with the following layout:</p>
+
+<fieldset><legend>Contact Form</legend>
+<form action="#" method="post" id="form">
+<p>Text marked in the <span class="req">following colour</span> is required</p>
+<ol>
+	<li class="req"><label for="firstname">First name</label><input type="text" name="firstname" id="firstname" class="text" placeholder="First name" required /></li>
+	<li class="req"><label for="lastname">Last name</label><input type="text" name="lastname" id="lastname" class="text" placeholder="Last name" required /></li>
+	<li class="req"><label for="email">Email address</label><input type="email" name="firstname" id="firstname" class="text" placeholder="someone@email.com" required/></li>
+	<li><label for="url">Website</label> http://<input type="url" name="url" id="url" class="text" placeholder="www.website.com" /></li>
+	<li><label for="phone">Phone</label><input type="tel" name="phone" id="phone" class="text" placeholder="087 1234567" /></li>
+	<li><label for="message">Message</label><textarea name="message" id="message" >Style these form elements using CSS. Don't use "size", "rows" or "cols" attributes.</textarea></li>
+	<li><input type="submit" name="submit" id="submit" class="submit-button" value="Send details" /></li>
+</ol>
+
+<p>And that's pretty much it. If you include all this in your blog posts and style it all up correctly, you're doing well!!!</p>
