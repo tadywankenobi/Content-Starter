@@ -3,3 +3,5 @@ I primarily work with Wordpress as both a blog and CMS solution for my clients, 
 To solve this problem, I've created this content file. The idea is that once a Wordpress blog is setup, you create a page or post and drop this content into the editor. It is designed to work with the HTML tab in the editor, as opposed to the VISUAL editor. Adding it in the VISUAL editor will strip out or make ineffective most of the tags. Add the content and click preview or publish (presuming you are working off a local install) to see how it looks, fix up any styling issues, go to bed smiling!
 
 The content is as up-to-date as I can think of at the moment. It uses proper HTML5 tags (FWIW) and attributes. It is as accessible as I can make it (without including WAI-ARIA roles. I can only hold your hand so far). I cannot take account of or responsibility for any plugins that drop custom content into the page and wreck the layout. Take that up with the plugin writers.
+
+This content should also work with other CMS' but I haven't tested them, nor am I really familiar with them. Try this out, I'm sure it won't take much to adapt for your needs.
